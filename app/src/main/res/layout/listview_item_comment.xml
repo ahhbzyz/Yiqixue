@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:id="@+id/img_user_logo"
+        android:src="@mipmap/head3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp">
+
+        <com.yiqixue.utils.RatingBarView
+            android:id="@+id/ratingBar"
+            app:starImageSize = "8dp"
+            app:starCount = "5"
+            app:starEmpty = "@drawable/ratingbar_empty"
+            app:starFill = "@drawable/ratingbar_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/tv_comment"
+            android:layout_marginBottom="4dp"
+           >
+        </com.yiqixue.utils.RatingBarView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="小明"
+            android:id="@+id/tv_user_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_text_subhead" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="7月10日"
+            android:id="@+id/tv_comment_date"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_toRightOf="@+id/tv_user_name"
+            android:layout_marginLeft="8dp"
+            android:layout_above="@+id/tv_comment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师讲课非常认真详细，从国外学习过的老师就是不一样，说的很清晰很易懂，不像很多老师的模式化讲课。祝李老师身体健康！有时间了我还再找李老师上课。"
+            android:id="@+id/tv_comment"
+            android:layout_below="@+id/tv_user_name"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/dimen_text_body" />
+    </RelativeLayout>
+</LinearLayout>

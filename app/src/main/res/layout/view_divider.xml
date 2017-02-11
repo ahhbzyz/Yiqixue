@@ -1,0 +1,5 @@
+<View
+    android:layout_height="1px"
+    android:background="@color/divider_line_color"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

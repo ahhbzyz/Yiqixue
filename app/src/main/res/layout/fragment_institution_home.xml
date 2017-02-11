@@ -1,0 +1,204 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yiqixue.education.course.CourseHomeFragment"
+    android:orientation="vertical"
+    android:id="@+id/root">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="机构信息"
+                        android:id="@+id/tv_institution_info_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@color/theme"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="官方认证"
+                        android:id="@+id/tv_teach_years"
+
+                        android:textSize="@dimen/dimen_text_caption"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/tv_teacher_name"
+                        android:textColor="@color/white"
+                        android:paddingLeft="2dp"
+                        android:paddingTop="1dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="1dp"
+                        android:background="@color/theme"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="领域"
+                        android:id="@+id/tv_institution_field_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="雅思、托福、GRE、GMAT"
+                        android:id="@+id/tv_institution_field"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="位置"
+                        android:id="@+id/tv_institution_position_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="上海-上海市-松江区"
+                        android:id="@+id/tv_institution_position"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="类别"
+                        android:id="@+id/tv_institution_category_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="教育机构"
+                        android:id="@+id/tv_institution_category"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构介绍"
+                    android:id="@+id/tv_institution_intro_title"
+                    android:textSize="@dimen/dimen_text_subhead"
+                    android:textColor="@color/theme"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp" />
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="2012年02月 — 至今 开始主讲考研英语课程。主讲考研英语词汇，考研语法句型，考研阅读，考研翻译，写作等课程。系统性的提供考研英语备考方案和课程服务，辅导的对象包括在校应届生和有多年工作经验等不同特点和不同需求的考生。目前在跟谁学上开设“真题文火慢炖”系列，“考研英语公开讲座”系列，“死磕营”系列不同课程，完整的课程体系，帮助学生系统性的解决备考难题。收起全部"
+                        android:id="@+id/tv_institution_intro"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_marginTop="4dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

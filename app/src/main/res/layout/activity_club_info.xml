@@ -1,0 +1,458 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yiqixue.club.clubinfo.ClubInfoActivity"
+    android:orientation="vertical"
+    android:background="@color/activity_background_color">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/view_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/img_club_logo"
+                    android:src="@mipmap/clublogo"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_club_logo"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="青年志愿者协会"
+                        android:id="@+id/tv_club_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="社团号：0135"
+                        android:id="@+id/tv_club_id"
+                        android:layout_below="@+id/tv_club_title"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_marginTop="4dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View android:layout_height="1px"
+                android:background="@color/divider_line_color"
+                android:layout_width="fill_parent"
+                />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:id="@+id/layout_manage_only">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_add_event"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/img_event"
+                        android:src="@mipmap/ic_event_grey"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="添加活动"
+                        android:id="@+id/tv_add_event"
+                        android:layout_below="@+id/img_event"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="48dp"
+                    android:background="@color/divider_line_color"
+
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_add_notifi"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/img_notification"
+                        android:src="@mipmap/ic_notifications_grey"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="添加公告"
+                        android:id="@+id/tv_add_notification"
+                        android:layout_below="@+id/img_notification"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="48dp"
+                    android:background="@color/divider_line_color"
+
+                    android:layout_gravity="center_vertical" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_manage_club"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/img_group"
+                        android:src="@mipmap/ic_manage_grey"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="管理社团"
+                        android:id="@+id/tv_manage_club"
+                        android:layout_below="@+id/img_group"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_club_notifi">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="社团公告"
+                        android:id="@+id/tv_club_notification_title"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="明天9点开会"
+                        android:id="@+id/tv_club_notification"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:textSize="@dimen/dimen_text_body" />
+
+                </RelativeLayout>
+
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_club_intro">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="社团介绍"
+                        android:id="@+id/textView2"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_history_event"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="历史活动"
+                        android:id="@+id/tv_history_event"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:id="@+id/tv_event_num"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_club_member">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="社团成员"
+                        android:id="@+id/tv_club_member"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80"
+                        android:id="@+id/tv_member_num"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="社长"
+                        android:id="@+id/tv_club_leader_name_title"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="朱强"
+                        android:id="@+id/tv_club_leader_name"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_chief_phone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="手机"
+                        android:id="@+id/tv_club_leader_phone_title"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18862300786"
+                        android:id="@+id/tv_leader_phone"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="22dp"
+                android:id="@+id/layout_member_only">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="退出社团"
+                    android:id="@+id/btn_dismiss_club"
+                    android:textColor="@color/white"
+                    android:background="@drawable/selector_btn_bg"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/dimen_text_subhead" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                android:layout_marginBottom="22dp"
+                android:id="@+id/layout_user_only">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="加入"
+                    android:id="@+id/btn_join"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_bg"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/dimen_text_subhead" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

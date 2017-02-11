@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:layout_width="104dp"
+        android:layout_height="72dp"
+        android:id="@+id/img_project_logo"
+        android:src="@mipmap/welfare"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_project_logo"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="贫困孤儿助养"
+            android:id="@+id/tv_project_title"
+            android:textSize="@dimen/dimen_text_subhead"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="1485元，为孤儿提供一年的生活费用。"
+            android:id="@+id/tv_project_intro"
+            android:layout_below="@+id/tv_project_title"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="爱基金"
+            android:id="@+id/tv_project_org"
+            android:layout_below="@+id/tv_project_intro"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="已有"
+            android:id="@+id/tv_total"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/tv_project_org" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="16"
+            android:id="@+id/tv_project_donor_num"
+            android:layout_toRightOf="@+id/tv_total"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/tv_project_org"
+            android:textColor="@color/theme" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="人捐款"
+            android:id="@+id/tv_title_join"
+            android:layout_toRightOf="@+id/tv_project_donor_num"
+            android:layout_marginLeft="4dp"
+            android:textSize="@dimen/dimen_text_body"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/tv_project_org" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

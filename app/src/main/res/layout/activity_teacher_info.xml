@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/layout_toolbar" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/theme">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:id="@+id/img_teacher_logo"
+                android:src="@mipmap/head2"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="王宝"
+                android:id="@+id/tv_teacher_name"
+                android:layout_below="@+id/img_teacher_logo"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_text_subhead"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <com.yiqixue.utils.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/activity_background_color" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

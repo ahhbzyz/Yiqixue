@@ -1,0 +1,299 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yiqixue.education.course.CourseHomeFragment"
+    android:orientation="vertical"
+    android:id="@+id/root">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="初中数学"
+                    android:id="@+id/tv_course_name"
+                    android:textSize="@dimen/dimen_text_title"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="￥120"
+                    android:textSize="@dimen/dimen_text_body"
+                    android:id="@+id/tv_course_price"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/theme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="线下授课"
+                    android:id="@+id/tv_course_tag_offline"
+
+                    android:layout_below="@+id/tv_course_name"
+                    android:textSize="@dimen/dimen_text_caption"
+                    android:background="@color/theme"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="4dp"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="支持随退"
+                    android:id="@+id/tv_course_tag_refund"
+                    android:textSize="@dimen/dimen_text_caption"
+                    android:textColor="@color/white"
+                    android:background="@color/theme"
+                    android:layout_toRightOf="@+id/tv_course_tag_offline"
+                    android:layout_below="@+id/tv_course_name"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="购买课时"
+                    android:id="@+id/button"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="false"
+                    android:background="@drawable/selector_btn_bg"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/tv_course_price"
+                    android:layout_marginTop="16dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程描述"
+                    android:id="@+id/tv_course_describe_title"
+                    android:textSize="@dimen/dimen_text_subhead"
+                    android:textColor="@color/theme"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp" />
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="适合人群"
+                        android:id="@+id/tv_target_customer_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="初一学生"
+                        android:id="@+id/tv_target_customer"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="学习目的"
+                        android:id="@+id/tv_course_aim_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="补习初一数学知识"
+                        android:id="@+id/tv_course_aim"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程信息"
+                    android:id="@+id/tv_course_info_title"
+                    android:textSize="@dimen/dimen_text_subhead"
+                    android:textColor="@color/theme"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp" />
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="授课老师"
+                        android:id="@+id/tv_teahcer_name_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="王宝"
+                        android:id="@+id/tv_teacher_name"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="授课时间"
+                        android:id="@+id/tv_course_time_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="每周一到周五下午2点"
+                        android:id="@+id/tv_course_time"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <View android:layout_height="1px"
+                    android:background="@color/divider_line_color"
+                    android:layout_width="fill_parent"
+                    android:layout_alignParentBottom="true" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="班级人数"
+                        android:id="@+id/tv_course_member_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="4/50"
+                        android:id="@+id/tv_course_member"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

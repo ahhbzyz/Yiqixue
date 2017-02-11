@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yiqixue.main.SearchActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/view_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="搜索更多内容"
+        android:id="@+id/tv_search_more"
+        android:textSize="@dimen/dimen_text_title"
+        android:layout_marginTop="48dp"
+        android:textColor="@color/tab_text_color" />
+
+    <View
+        android:layout_height="1px"
+        android:background="@color/divider_line_color"
+        android:layout_width="136dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="16dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/shape_dot"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="课程"
+            android:id="@+id/tv_course_title"
+            android:layout_toRightOf="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/dimen_text_body"
+            android:textColor="@color/tab_text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/shape_dot"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="老师"
+            android:id="@+id/tv_teacher_title"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/dimen_text_body"
+            android:textColor="@color/tab_text_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center">>
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/shape_dot"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="社团"
+            android:id="@+id/tv_club_title"
+            android:layout_toRightOf="@+id/imageView6"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/dimen_text_body"
+            android:textColor="@color/tab_text_color" />
+    </RelativeLayout>
+
+
+</LinearLayout>

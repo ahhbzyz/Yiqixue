@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/img_tab"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:focusable="false"
+
+        android:src="@mipmap/ic_tab_education"
+        android:scaleType="fitXY">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="教育"
+        android:id="@+id/tv_tab_name"
+        android:textSize="@dimen/dimen_text_caption"
+        android:textColor="@color/selector_tab_text" />
+
+</LinearLayout>

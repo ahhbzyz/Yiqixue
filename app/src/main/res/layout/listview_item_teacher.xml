@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_teacher_result">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/img_teacher_logo"
+            android:src="@mipmap/head1"
+            android:layout_centerVertical="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img_teacher_logo"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="王宝"
+                android:id="@+id/tv_teacher_name"
+
+                android:textSize="@dimen/dimen_text_subhead"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="￥150"
+                android:id="@+id/tv_teacher_price"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/dimen_text_body"
+                android:textColor="@color/theme"
+                android:layout_toLeftOf="@+id/tv_price_atleast"
+                android:layout_marginRight="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="起"
+                android:id="@+id/tv_price_atleast"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/dimen_text_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="益起学，和你们益起成长"
+                android:id="@+id/tv_teacher_describe"
+                android:layout_below="@+id/tv_teacher_field"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/dimen_text_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="10年教龄"
+                android:id="@+id/tv_teach_years"
+
+                android:textSize="@dimen/dimen_text_caption"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_teacher_name"
+                android:textColor="@color/white"
+                android:paddingLeft="2dp"
+                android:paddingTop="1dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="1dp"
+                android:background="@color/theme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="雅思，托福"
+                android:id="@+id/tv_teacher_field"
+
+                android:layout_below="@+id/tv_teach_years"
+                android:textSize="@dimen/dimen_text_body"
+                android:layout_marginTop="4dp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="新东方认证老师"
+                android:id="@+id/tv_teacher_identification"
+                android:layout_below="@+id/tv_teacher_describe"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/dimen_text_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="距离"
+                android:id="@+id/tv_teacher_distance_title"
+                android:layout_alignParentRight="false"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_teacher_describe"
+                android:layout_toLeftOf="@+id/tv_teacher_distance"
+                android:layout_marginRight="2dp"
+                android:textSize="@dimen/dimen_text_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="8km"
+                android:id="@+id/tv_teacher_distance"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_teacher_describe"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/theme"
+                android:textSize="@dimen/dimen_text_body" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

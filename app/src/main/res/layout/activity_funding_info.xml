@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/activity_background_color">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:id="@+id/layout_toolbar"
+            layout="@layout/view_toolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+
+
+        android:layout_below="@+id/layout_appbar">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_large_image"
+                android:id="@+id/img_event"
+                android:src="@mipmap/welfare"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_project"
+                android:paddingBottom="72dp"
+                android:layout_below="@+id/img_event">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:id="@+id/img_club_logo"
+                        android:src="@mipmap/clublogo"
+                        android:layout_marginRight="16dp"
+                        android:layout_centerVertical="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="贫困孤儿助养"
+                        android:id="@+id/tv_event_title"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:layout_toRightOf="@+id/img_club_logo"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1485元，为孤儿提供一年的生活费用。"
+                        android:id="@+id/tv_project_intro"
+                        android:layout_toRightOf="@+id/img_club_logo"
+                        android:layout_below="@+id/tv_event_title"
+                        android:layout_marginTop="2dp"
+                        android:textSize="@dimen/dimen_text_body" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="爱基金"
+                        android:id="@+id/tv_club_name"
+                        android:layout_below="@+id/tv_project_intro"
+                        android:layout_toRightOf="@+id/img_club_logo"
+                        android:textSize="@dimen/dimen_text_body"
+                        android:layout_marginTop="2dp" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_club_logo"
+                        android:layout_below="@+id/tv_club_name"
+                        android:layout_marginTop="2dp">
+
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/progressBar_project_progress"
+                            android:layout_below="@+id/tv_total"
+                            android:layout_weight="1"
+                            android:progress="40"
+                            android:background="@color/transparent"
+                            android:indeterminate="false"
+                            android:layout_gravity="center_vertical" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="40%"
+                            android:id="@+id/tv_project_progress"
+                            android:layout_toRightOf="@+id/progressBar_project_progress"
+                            android:layout_below="@+id/tv_total"
+                            android:layout_marginLeft="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="@dimen/dimen_text_caption"
+                            android:textColor="@color/theme" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/view_divider"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="5000000元"
+                            android:id="@+id/tv_required_num"
+                            android:textColor="@color/theme"
+                            android:textSize="@dimen/dimen_text_body"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="筹款目标"
+                            android:id="@+id/tv_required_num_title"
+                            android:layout_below="@+id/tv_required_num"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="@dimen/dimen_text_body" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="48dp"
+                        android:background="@color/divider_line_color"
+
+                        android:layout_gravity="center_vertical" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="已筹"
+                            android:id="@+id/tv_donated_num_title"
+                            android:layout_below="@+id/tv_donated_num"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="4dp"
+                            android:textSize="@dimen/dimen_text_body" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="16000元"
+                            android:id="@+id/tv_donated_num"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/theme"
+                            android:textSize="@dimen/dimen_text_body" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="48dp"
+                        android:background="@color/divider_line_color"
+
+                        android:layout_gravity="center_vertical" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="16dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="参与捐款"
+                            android:id="@+id/tv_num_participants_title"
+                            android:layout_below="@+id/tv_participants_num"
+                            android:layout_marginTop="4dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="@dimen/dimen_text_body" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="16人"
+                            android:id="@+id/tv_participants_num"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/theme"
+                            android:textSize="@dimen/dimen_text_body" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="项目详情"
+                        android:id="@+id/tv_event_intro_title"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="8dp"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="新学期伊始，我们青年志愿者协会面对更多的机遇与挑战，我系青协的整体工作将会继续以“奉献、友爱、互助、进步”为准则，以“奉献社会、服务他人”为宗旨，以锻炼自己为目的，来开展各项活动,用实际行动服务社会，倡导真、善、美，呼唤正义、爱心与奉献，积极开展“讲文明，树新风”为主题的志愿服务活动。"
+                        android:id="@+id/tv_event_intro"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:layout_below="@+id/tv_event_intro_title" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_funding_participants"
+                    android:layout_marginTop="20dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="参与用户"
+                        android:id="@+id/tv_participants"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dimen_text_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@+id/tv_participants">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/img_head"
+                            android:src="@mipmap/head1" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/img_head2"
+                            android:src="@mipmap/head2"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/img_head" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/img_head3"
+                            android:src="@mipmap/head3"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/img_head2" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/imageView7"
+                            android:src="@mipmap/head3"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/img_head3" />
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/imageView8"
+                            android:src="@mipmap/head3"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@+id/imageView7" />
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:id="@+id/imageView5"
+                            android:src="@mipmap/ic_chevron_right"
+                            android:layout_alignParentEnd="false"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:background="@drawable/selector_item_bg"
+                    android:id="@+id/layout_funding_comment"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="16"
+                        android:id="@+id/tv_comment_num"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/theme"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text=" 条评论"
+                        android:id="@+id/tv_comment_title"
+                        android:layout_toRightOf="@+id/tv_comment_num"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/dimen_text_subhead"
+                        android:textColor="@android:color/black" />
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:id="@+id/img_go"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_chevron_right"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+    <View android:layout_height="2px"
+        android:background="@color/divider_line_color"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/layout_button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_button"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="8dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="捐款"
+            android:id="@+id/btn_donate"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selector_btn_bg"
+            android:textSize="@dimen/dimen_text_subhead" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="邀请"
+            android:id="@+id/btn_invite"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_bg"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/dimen_text_subhead" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.squareup\android-times-square\1.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="49a161d665861cd093b0b0ba2bfcfe791f1330ef">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-d8af3a081beb30c411b3a2229a907e9b3425e0fd.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-dfd9f58ac2d625fa31a8b2bc76e538eca78e0bf3.jar" />
+    </item>
+    <item
+        jar="C:\Program Files (x86)\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-715dc6cec26a2fc482c2dfbc751b0f47337bf5bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.LLNEI9YCSZXKFIT\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\library-2.4.0-88597be2a623def17494909bf164154daeeeda8e.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-5c54ef5ba1bce780a67b813e00cf166620249821.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator.LLNEI9YCSZXKFIT\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-011fd11839b30d2c99fe6486f6de5d01dd5dcbe6.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-6065055ef9aca1675b2fa257fac849f638abecfb.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-998face7df711807e86f5764afec353a47149910.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-af92e04f55da29e046c7e33ca5eb422de2465b41.jar" />
+    </item>
+    <item
+        jar="D:\Yiqixue\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="D:\Yiqixue\app\build\intermediates\pre-dexed\debug\classes-e987025e1a6b0299a9741390ede20159df4d2de4.jar" />
+    </item>
+
+</items>

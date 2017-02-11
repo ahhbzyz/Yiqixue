@@ -1,0 +1,117 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/selector_item_bg"
+    android:id="@+id/layout_event_item">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/img_club_logo"
+            android:src="@mipmap/clublogo"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_club_logo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="青协迎新志愿者活动"
+                android:id="@+id/tv_event_title"
+                android:textSize="@dimen/dimen_text_subhead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="青年志愿者协会"
+                android:id="@+id/tv_club_name"
+                android:textSize="@dimen/dimen_text_body"
+
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/tv_event_describe"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="7月10日 8:00"
+                android:id="@+id/tv_event_date"
+                android:textSize="@dimen/dimen_text_body"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="一年一度的迎新活动开始啦！"
+                android:id="@+id/tv_event_describe"
+                android:layout_below="@+id/tv_event_title"
+                android:layout_marginTop="4dp"
+                android:textSize="@dimen/dimen_text_body" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/tv_club_name">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="已有"
+                    android:id="@+id/tv_total"
+                    android:textSize="@dimen/dimen_text_body"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_club_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="16"
+                    android:id="@+id/tv_project_donor_num"
+                    android:layout_toRightOf="@+id/tv_total"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/dimen_text_body"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_club_name"
+                    android:textColor="@color/theme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="人参加"
+                    android:id="@+id/textView13"
+                    android:layout_toRightOf="@+id/tv_project_donor_num"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/dimen_text_body"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/tv_club_name" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- actionbar color-->
+        <item name="colorPrimary">@color/theme</item>
+        <!-- 随主题而改变的颜色（如CheckBox的颜色）-->
+        <item name="colorAccent">@color/theme</item>
+        <!--&lt;!&ndash; 去阴影&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">true</item>-->
+        <item name="colorPrimaryDark">@color/theme</item>
+
+
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:dropDownListViewStyle">@style/mySpinnerStyle</item>
+
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.MyHolo.widget" parent="Theme.AppCompat.Light">
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <!--Toolbar Title-->
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--Spinner-->
+    <style name="mySpinnerStyle" parent="android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@color/divider_line_color</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <!--Dialog-->
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/theme</item>
+        <item name="android:textColorPrimary">@color/theme</item>
+    </style>
+
+
+    <style name="AndroidImageSlider_Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="shape">oval</item>
+        <item name="padding_left">3dp</item>
+        <item name="padding_right">3dp</item>
+        <item name="padding_top">4dp</item>
+        <item name="padding_bottom">4dp</item>
+
+        <item name="selected_color">@color/theme</item>
+        <item name="unselected_color">@color/white</item>
+        <item name="selected_width">8dp</item>
+        <item name="selected_height">8dp</item>
+        <item name="unselected_width">6dp</item>
+        <item name="unselected_height">6dp</item>
+    </style>
+
+</resources>

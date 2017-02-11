@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme">#f44336</color><!--theme -->
+    <color name="tab_text_color">#9e9e9e</color><!--theme -->
+    <color name="tab_line_color">#e0e0e0</color><!--theme -->
+    <color name="btn_selected">#96E84E40</color><!--theme -->
+    <color name="divider_line_color">#e0e0e0</color><!--theme -->
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="black">#ff000000</color><!--black -->
+    <color name="transparent">#00000000</color>
+
+
+    <color name="item_pressed_color">#eeeeee</color><!--theme -->
+    <color name="activity_background_color">#eeeeee</color><!--theme -->
+
+    <!--component for slider-->
+    <color name="shadowstart">#00000000</color>
+    <color name="shadowends">#7f000000</color>
+
+
+    <!--component for calendar-->
+
+    <color name="custom_text_selected">#FFFFFFFF</color>
+
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+
+    <color name="calendar_highlighted_day_bg">#eeeeee</color>
+
+</resources>
